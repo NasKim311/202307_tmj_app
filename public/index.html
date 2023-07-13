@@ -2,19 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>The MatJip</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/assets/favicon/favicon.ico" sizes="32x32" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/allCss.css" />
+
+    <!-- jquery -->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/lib/jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/lib/jquery-ui/jquery-ui.min.css" />
+    
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <!-- proper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+
+    <!-- tippy -->
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    
+    <!-- tempus-dominus     -->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/lib/tempus-dominus/tempus-dominus.min.js"></script>
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/lib/tempus-dominus/tempus-dominus.min.css" crossorigin="anonymous" />
+    
+    <!-- adminlte -->
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" />
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.css" />
+
+    <!-- fullcalendar -->
+    <script src="%PUBLIC_URL%/assets/lib/fullcalendar/index.global.min.js"></script>
+
+    <!-- fontawesome -->
+    <!-- <link rel="stylesheet" href="%PUBLIC_URL%/assets/lib/fontawesome/all.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/lib/fontawesome/fontawesome.min.css" /> -->
+
+    <!-- color-picker -->
+    <!-- <script src="%PUBLIC_URL%/assets/lib/color-picker/pickr.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="%PUBLIC_URL%/assets/lib/color-picker/themes/classic.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/lib/color-picker/themes/monolith.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/lib/color-picker/themes/nano.min.css" /> -->
+    
+    <style>
+      .visually-hidden{display:none}
+    </style>
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,11 +64,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root" style="width: 100%;"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

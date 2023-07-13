@@ -1,0 +1,76 @@
+html,
+body {
+  background-color: #0581bb;
+  background: linear-gradient(180deg, #0584bb 35%, #046795 100%);
+  font-size: 17px;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+nav {
+  margin: 10px;
+}
+.main-cover {
+  background-color: #0581bb;
+  background: linear-gradient(180deg, #0584bb 35%, #046795 100%);
+  padding-bottom: 170px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fefefe;
+  /* padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top); */
+  height: 100%;
+  width: 100%;
+}
+/* nav {
+  position: absolute !important;
+  z-index: 9999;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+  z-index: 9998;
+} */
+.logo-aTag {
+  text-decoration: none;
+}
+.logo-box {
+  color: #fefefe;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 10px;
+  float: left;
+}
+.menu-box {
+  text-align: right;
+  padding-top: 10px;
+  /* float: right; */
+}
+.title-box {
+  font-size: 42px;
+  line-height: 50px;
+}
+.select-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+::selection {
+  background: #39f;
+  color: #fff;
+  text-shadow: none;
+}
+
+.border-radius {
+  border-radius: 12px;
+}
+
+.login-box {
+  /* 상하좌우 정중앙 정렬하기 */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #fefefe;
+}
