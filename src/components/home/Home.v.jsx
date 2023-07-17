@@ -11,8 +11,8 @@ const HomeV = ({state}) => (
 
         <div className="visited-container">
             <div className="title">
-                <span> 무슨 말을 써야할지 </span>
-                <div className="sub">또 가야지이~~</div>
+                <span>qweqweqwe </span>
+                <div className="sub">asdasdasd</div>
             </div>
         </div>
 

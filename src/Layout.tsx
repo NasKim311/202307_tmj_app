@@ -41,12 +41,14 @@ class Layout extends React.Component{
       <div className="wrapper wrapper-list">
         <NavBar />
 
-        <SideBar/>
         
-        <div className="content-wrapper px-4 py-2">
+        {/* <div className="content-wrapper px-4 py-2"> */}
+        <div className="">
           <Routes>
             <Route path='/index.html' element={<Home/>}></Route>
-            <Route path='/' element={<Home/>}></Route>        
+            <Route path='/' element={<Home/>}></Route>     
+
+            <Route path='/sideBar' element={<SideBar/>}></Route>        
             
             <Route path='/login' element={
               <PublicRoute>
