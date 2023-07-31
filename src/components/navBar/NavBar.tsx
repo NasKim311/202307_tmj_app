@@ -3,30 +3,37 @@ import React from 'react';
 import {withRouter} from "core/withRouter";
 
 import NavBarV from "./NavBar.v"; 
-
-import { NavLink } from 'react-router-dom';
 import BaseComponent from 'components/BaseComponent';
-import authService from "services/auth.service";
 
 class PageState {
   error: string = null;
   isLoaded:boolean = false;
+  isShowSidebar: boolean = false;
+  
 };
 
-class NavBar extends React.Component{
+class NavBar extends BaseComponent{
   public state = new PageState();
 
   constructor(props : any){
     super(props);
+
+    this.showSidebar = this.showSidebar.bind(this);
   } 
 
   public componentDidMount() : void {
   }
 
+  public showSidebar() {
+    this.setState({
+      isShowSidebar: !this.state.isShowSidebar,
+    });
+  }
 
   public render() {
     const props = {
       state : this.state ,
+      showSidebar : this.showSidebar ,
     }
     
     return (

@@ -9,9 +9,6 @@ import {PublicRoute} from "core/route.public";
 import Loading from "Loading";
 import NoPage from 'components/NoPage';
 
-// const My = lazy(() => import(/* webpackChunkName: "MyComponent" */ './components/my/My'))
-// const Trip = lazy(() => import(/* webpackChunkName: "MyComponent" */ './components/trip/Trip'))
-
 const Login = lazy(() => {
     return Promise.all([ 
       import('./components/login/Login') , 
@@ -41,8 +38,6 @@ class Layout extends React.Component{
       <div className="wrapper wrapper-list">
         <NavBar />
 
-        
-        {/* <div className="content-wrapper px-4 py-2"> */}
         <div className="">
           <Routes>
             <Route path='/index.html' element={<Home/>}></Route>
@@ -55,17 +50,6 @@ class Layout extends React.Component{
                 <React.Suspense fallback={<Loading/>}><Login/></React.Suspense> 
                 </PublicRoute> 
             }></Route>
-
-            {/* <Route path='/my' element={
-              <ProtectedRoute>
-                <React.Suspense fallback={<Loading/>}><My/></React.Suspense> 
-              </ProtectedRoute> 
-            }></Route> */}
-
-
-            {/* <Route path='/trip/*' element={
-              <React.Suspense fallback={<Loading/>}><Trip/></React.Suspense> 
-            }></Route> */}
 
             <Route path='*' element={<NoPage/>}></Route>   
         </Routes>

@@ -1,15 +1,12 @@
 import React from 'react';
 
-// image
-import TheMatJip_logo from '../../assets/img/cow.png';
-
 const LoginV = ({state , signIn , handleChange}) => (
 
     <form onSubmit={signIn}>
 
         <div className="login-box ">
             <div className="login-logo">
-                <b>The MatJip <img src={TheMatJip_logo} alt='TheMatJip_logo' /></b>
+                <b>The MatJip <img src={`${process.env.PUBLIC_URL}/assets/img/cow.png`} alt='TheMatJip_logo' /></b>
             </div>
 
             <div className="card">

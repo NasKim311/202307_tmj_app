@@ -1,28 +1,40 @@
 import React from "react";
+import SideBar from 'components/sideBar/SideBar';
 
-// image
-import TheMatJip_logo from '../../assets/img/cow.png';
-import menu_logo from '../../assets/img/menu-button.png';
-
-
-const NavBarV = ({state}) => (
+const NavBarV = ({state , showSidebar}) => (
+<>
 
     <nav className="navbar">
         <div className="navbar-left">
             <div className="logo-box">
                 <a href="/">
-                    <b><img src={TheMatJip_logo} alt='TheMatJip_logo' /> The MatJip</b>
+                    <b><img src={`${process.env.PUBLIC_URL}/assets/img/cow.png`} alt='TheMatJip_logo' /> The MatJip</b>
                 </a>
             </div>
         </div>
         <div className="navbar-right">
-            <div className="menu-box">
-                <a href="/sideBar">
-                    <img src={menu_logo} alt='TheMatJip_logo' style={{width : '75%'}} />
-                </a>
+            <div className="menu-btn">
+                <div className="ani-btn">
+                    <a href="#" onClick={showSidebar}>
+                    {!state.isShowSidebar &&
+                        <div className="open">
+                        <img src={`${process.env.PUBLIC_URL}/assets/img/menu-button.png`} alt='TheMatJip_logo' style={{width : '75%', display : 'block',  margin : 'auto'}} />
+                        </div>
+                    }
+                    {state.isShowSidebar &&
+                        <div className="close">x</div>
+                    }
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
+
+    {state.isShowSidebar &&
+         <SideBar />
+     }
+
+</>
 
 );
 

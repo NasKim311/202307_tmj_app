@@ -7,26 +7,24 @@ import BaseComponent from "components/BaseComponent";
 import HomeV from "./Home.v"
 
 class PageState {
+    subTitle: string = '세계맛집 정복을 위하여';
     
 };
 
 class Home extends BaseComponent {
+    public state = new PageState();
 
     public render() {
     
         const props = {
             state : this.state  , 
-            // signIn : this.signIn , 
-            // handleChange : this.handleChange , 
         }
 
-        // return <VAC data={props} />;
         return (
             <HomeV {...props}></HomeV>
         );
 
     }
-
 
 }
 

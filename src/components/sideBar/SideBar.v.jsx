@@ -1,46 +1,58 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 
-// image
-import TheMatJip_logo from '../../assets/img/cow.png';
-import menu_logo from '../../assets/img/menu-button.png';
+const SideBarV = ({state , toggleMenu , side}) => (
+    <>
 
-
-const SideBarV = ({state , toggleMenu}) => (
-
-    <aside className="main-sidebar elevation-4">
-
-    {/* <a href="#" className="brand-link">
-      <span className="brand-text font-weight-light">홈으로</span>
-    </a> */}
-
-    <div className="sidebar">
-        {/* <div className="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div className="info">
-                <a className="d-block">{userid}
-                &nbsp;
-                <button onClick={this.signOut} className="nav-icon fas">logout</button>
+    <div className="side-menu-bar">
+        <div className="menu-box">
+            <ul className="menu">
+                <a href="/">
+                    <li>
+                        <span className="emozi">🏠</span>
+                        <span className="name">홈으로</span>
+                    </li>
                 </a>
-            </div>
-        </div> */}
+                <a href="/map_finder">
+                    <li>
+                        <span className="emozi">🗺</span>
+                        <span className="name">지도 찾기</span>
+                    </li>
+                </a>
+            </ul>
+            
+                <ul className="menu">
+                    <a>
+                        <li>
+                            <span className="emozi">👋</span>
+                            <span className="name">로그인</span>
+                        </li>
+                    </a>
+                </ul>
 
-        <nav className="mt-2">
-            <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
-                <li className="nav-item">
-                    <NavLink to='/' className="nav-link">
-                    <i className="nav-icon fas fa-th"></i>
-                    <p>
-                        홈으로
-                        
-                    </p>
-                    </NavLink>
-                </li>
-            </ul>   
-        </nav>
-    
+        </div>
+        <div className="under-box">
+            <div className="menu-box">
+                <ul className="menu hide-md">
+                    <a href="/boundary">
+                        <li>
+                            <span className="emozi">🏖</span>
+                            <span className="name">바운더리</span>
+                        </li>
+                    </a>
+                    <a href="/interview">
+                        <li>
+                            <span className="emozi">📝</span>
+                            <span className="name">인터뷰</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    </>
     
-  </aside>
 
 );
 
